@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avimitra Saha</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Vanta.js Background -->
+  <div id="vanta-bg" class="fixed inset-0 -z-10"></div>
+
+  <!-- Navbar -->
+  <nav class="w-full fixed top-0 bg-black bg-opacity-70 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold">Avimitra Saha</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+        <li><a href="#about" class="hover:text-teal-400">About</a></li>
+        <li><a href="#skills" class="hover:text-teal-400">Skills</a></li>
+        <li><a href="#portfolio" class="hover:text-teal-400">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex items-center justify-center text-center">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold">Hi, I'm a Web Developer</h2>
+      <p class="text-lg md:text-xl mt-4">Creating engaging, modern, and responsive websites.</p>
+      <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-teal-500 text-black rounded-lg font-semibold hover:bg-teal-400">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg text-gray-400">I'm a passionate web developer with experience in creating dynamic and responsive web applications.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="p-4 bg-gray-800 rounded-lg">HTML</div>
+        <div class="p-4 bg-gray-800 rounded-lg">CSS</div>
+        <div class="p-4 bg-gray-800 rounded-lg">JavaScript</div>
+        <div class="p-4 bg-gray-800 rounded-lg">React</div>
+        <div class="p-4 bg-gray-800 rounded-lg">Tailwind CSS</div>
+        <div class="p-4 bg-gray-800 rounded-lg">Node.js</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Portfolio</h2>
+      <p class="text-gray-400 mb-8">Check out some of my recent projects:</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-gray-700 rounded-lg">Project 1</div>
+        <div class="p-4 bg-gray-700 rounded-lg">Project 2</div>
+        <div class="p-4 bg-gray-700 rounded-lg">Project 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <p class="text-gray-400 mb-8">Feel free to reach out to discuss your project or just say hi!</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-800 rounded-lg">
+        <input type="email" placeholder="Your Email" class="w-full p-4 bg-gray-800 rounded-lg">
+        <textarea placeholder="Your Message" class="w-full p-4 bg-gray-800 rounded-lg"></textarea>
+        <button class="px-6 py-3 bg-teal-500 text-black rounded-lg font-semibold hover:bg-teal-400">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-black text-center text-gray-400">
+    &copy; 2025 MyPortfolio. All rights reserved.
+  </footer>
+
+  <script>
+    // Initialize Vanta.js
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0f9,
+      backgroundColor: 0x1a1a1a
+    });
+  </script>
+</body>
+</html>
